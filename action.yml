@@ -1,0 +1,21 @@
+# action.yml
+name: 'Candy CLI'
+description: 'Take your JSON file to generate a beautiful board'
+inputs:
+  json-path:
+    required: true
+    description: 'The path of the generated JSON file'
+  output-dir:
+    required: false
+    description: 'The output directory'
+    default: './candy-output'
+  board-version:
+    required: false
+    description: 'The board version used'
+    default: 'latest'
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.json-path }}
