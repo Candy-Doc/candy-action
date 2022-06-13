@@ -1,7 +1,9 @@
 FROM node:lts-alpine3.16
 
-COPY entrypoint.sh /entrypoint.sh
+WORKDIR /usr/app
 
-RUN npm i @candy-doc/board @candy-doc/cli
+COPY ./ /usr/app
 
-ENTRYPOINT ["/entrypoint.sh"]
+RUN npm i @candy-doc/board && chmod +x entrypoint.sh
+
+ENTRYPOINT ["/usr/app/entrypoint.sh"]

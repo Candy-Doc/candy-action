@@ -1,3 +1,3 @@
 #!/bin/sh -l
 
-# TO COMPLETE
+candy-doc generate "${1}" --output-dir="${2}" --board-version="${3}"
