@@ -1,6 +1,8 @@
 name: 'Candy-doc board builder'
 description: 'Beautify your automatic generation of documentation'
-
+branding:
+    icon: file-text
+    color: blue
 runs:
   using: 'composite'
   steps:
