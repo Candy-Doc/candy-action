@@ -1,9 +1,9 @@
 # ⚡️ Candy-board automatic generator ⚡️
 ---
-[![build](https://github.com/Candy-Doc/candy-action/workflows/build/badge.svg)](https://github.com/Candy-Doc/candy-action/actions)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/Candy-doc/candy-action?label=Latest%20release)
 [![GitHub issues](https://img.shields.io/github/issues/Candy-Doc/candy-action?style=flat-square)](https://github.com/Candy-Doc/candy-action/issues)
 [![GitHub stars](https://img.shields.io/github/stars/Candy-Doc/candy-action?style=flat-square)](https://github.com/Candy-Doc/candy-action/stargazers)
-[![GitHub license](https://img.shields.io/github/license/JulienKode/pull-request-name-linter-action?style=flat-square)](https://github.com/JulienKode/pull-request-name-linter-action/blob/master/LICENSE)
+[![GitHub license](https://img.shields.io/github/license/Candy-Doc/candy-action?style=flat-square)](https://github.com/JulienKode/pull-request-name-linter-action/blob/master/LICENSE)
 ---
 
 **GitHub action** to automatically **beautify your documentation**  generated with [**Candy-doc**](https://github.com/Candy-Doc/candy-doc-maven-plugin).
@@ -20,7 +20,7 @@ To make your documentation beautiful, you need to configure environment variable
 
 ## Usage
 
-### Create `.github/workflows/pr-name.yml`
+### Create `.github/workflows/board-gen.yml`
 
 Create a workflow (eg: `.github/workflows/board-gen.yml` see [Creating a Workflow file](https://help.github.com/en/articles/configuring-a-workflow#creating-a-workflow-file)).
 Here is an example of configuration
