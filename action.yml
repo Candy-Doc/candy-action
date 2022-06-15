@@ -1,0 +1,24 @@
+name: 'Candy-doc board builder'
+description: 'Beautify your automatic generation of documentation'
+
+runs:
+  using: 'composite'
+  steps:
+    - name: Setup node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
+    - name: Run the CLI
+      shell: bash
+      run: npx candy-doc generate
+    - name: Generate artifact name
+      id: generate-name
+      shell: bash
+      run: |
+        echo "::set-output name=artifact::${{ date +"%Y-%m-%d_%Hh_%Mm_%Ss }}"
+    - name: Copy the build folder to an artifact
+      uses: act ions/upload-artifact@v3
+      with:
+        name: candy-dashboard-${{ steps.generate-name.outputs.artifact }}
+        path: ${{ env.CANDY_DOC_OUTPUT_PATH }}
+
