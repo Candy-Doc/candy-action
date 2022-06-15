@@ -37,4 +37,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - uses: Candy-doc/candy-action@v1
+      env:
+        CANDY_DOC_INPUT_PATH: ./input.json
+        CANDY_DOC_OUTPUT_PATH: ./target/
+        CANDY_DOC_BOARD_VERSION: 1.O.1
 ```
