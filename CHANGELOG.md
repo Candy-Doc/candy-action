@@ -1,3 +1,8 @@
+# [v1.1.0](https://github.com/Candy-Doc/candy-action/compare/v1.0.2...v1.1.0) (2022-06-16)
+
+## ✨ New minor Features
+- [`801a0e5`](https://github.com/Candy-Doc/candy-action/commit/801a0e5)  feat(action): Add a way to compile maven project if needed (#4) (Issues: [`#4`](https://github.com/Candy-Doc/candy-action/issues/4))
+
 # [v1.0.2](https://github.com/Candy-Doc/candy-action/compare/v1.0.1...v1.0.2) (2022-06-15)
 
 ## 🐛 Bug Fixes
